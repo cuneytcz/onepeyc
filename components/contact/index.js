@@ -30,7 +30,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col">
             <span className="text-sm text-black/60 font-outfit uppercase tracking-wider mb-3">
-              Merhaba De
+              Merhaba !
             </span>
             <h3 className="text-xl xl:text-2xl mb-24">
               Bizimle iletişime geçin

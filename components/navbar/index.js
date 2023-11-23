@@ -3,8 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import cn from "classnames";
+import Modal from "../modal";
 import { usePathname } from "next/navigation";
-import { AlignRight } from "lucide-react";
 
 const NavData = [
   {
@@ -12,19 +12,19 @@ const NavData = [
     label: "Anasayfa",
   },
   {
-    url: "/hakkimizda",
+    url: "about",
     label: "Hakkımızda",
   },
   {
-    url: "/portfolyo",
+    url: "portfolio",
     label: "Portfolyo",
   },
   {
-    url: "/hizmetlerimiz",
+    url: "services",
     label: "Hizmetlerimiz",
   },
   {
-    url: "/iletisim",
+    url: "contact",
     label: "İletişim",
   },
 ];
@@ -33,7 +33,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header>
+    <header className="relative">
       <div className="max-w-7xl w-full min-h-[77px] xl:min-h-[120px] mx-auto flex justify-between items-center px-8 md:px-12 xl:px-16 2xl:px-0">
         <div className="w-full xl:w-1/3">
           <Link href="/">
@@ -44,7 +44,7 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className="w-full xl:w-2/3">
+        <div className="w-full xl:w-2/3 flex">
           <nav className="hidden xl:flex justify-start items-center gap-11">
             {NavData.map((item, index) => (
               <Link
@@ -63,11 +63,7 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-          <button
-            type="button"
-            className="float-right xl:hidden">
-            <AlignRight className="w-6 h-6" />
-          </button>
+          <Modal data={NavData} />
         </div>
       </div>
     </header>

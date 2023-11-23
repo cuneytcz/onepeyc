@@ -92,3 +92,29 @@ export const CliensData = [
     url: "",
   },
 ];
+export const TeamData = [
+  {
+    id: 1,
+    src: "p1-team-img-1.jpg",
+    title: "Ahmet Demir",
+    category: "Frontend Geliştirici",
+  },
+  {
+    id: 2,
+    src: "p1-team-img-2.jpg",
+    title: "Grafik Tasarımcı ",
+    category: "Grafik Tasarım ",
+  },
+  {
+    id: 3,
+    src: "p1-team-img-3.jpg",
+    title: "Miguel Anders",
+    category: "Mobil Uygulama",
+  },
+  {
+    id: 4,
+    src: "p1-team-img-4.jpg",
+    title: "Zeynep Tekin",
+    category: "Backend Geliştirici",
+  },
+];
