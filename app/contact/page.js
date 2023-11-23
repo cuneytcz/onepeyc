@@ -1,8 +1,9 @@
+"use client";
+
 import Container from "@/components/container";
 import Heading from "@/components/heading";
 import Input from "@/components/input";
 import Section from "@/components/section";
-import { Send } from "lucide-react";
 import React from "react";
 
 export default function Page() {
@@ -17,13 +18,25 @@ export default function Page() {
           <div className="grid xl:grid-cols-12 gap-12">
             <div className="col-span-full xl:col-span-7">
               <form className="flex flex-col gap-12">
-                <Input label="Ad Soyad *" />
-                <Input label="E-posta *" />
-                <Input label="Bize bir şeyler yazın *" />
+                <Input
+                  label="Ad Soyad *"
+                  id="name"
+                  type="text"
+                />
+                <Input
+                  label="E-posta *"
+                  id="email"
+                  type="text"
+                />
+                <Input
+                  label="Bize bir şeyler yazın *"
+                  id="message"
+                  type="text"
+                />
                 <button
                   type="submit"
-                  className="w-fit flex justify-center items-center gap-1.5 relative group overflow-hidden">
-                  <span className="text-black font-outfit -mt-0.5">Gönder</span>
+                  className="w-fit flex items-center px-9 py-3 bg-black">
+                  <span className="text-white font-outfit -mt-0.5">Gönder</span>
                 </button>
               </form>
             </div>
