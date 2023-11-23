@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import Heading from "@/components/heading";
 import Input from "@/components/input";
 import Section from "@/components/section";
+import { Send } from "lucide-react";
 import React from "react";
 
 export default function Page() {
@@ -9,7 +10,7 @@ export default function Page() {
     <>
       <Heading
         subtitle="Bize Ulaşın"
-        title="İş Birliği Teklifleriniz veya Geri Bildirimleriniz İçin Bizimle İletişime Geçin"
+        title="İş Birliği Teklifleriniz İçin Bizimle İletişime Geçin"
       />
       <Section>
         <Container>
@@ -18,7 +19,12 @@ export default function Page() {
               <form className="flex flex-col gap-12">
                 <Input label="Ad Soyad *" />
                 <Input label="E-posta *" />
-                <Input label="Mesaj *" />
+                <Input label="Bize bir şeyler yazın *" />
+                <button
+                  type="submit"
+                  className="w-fit flex justify-center items-center gap-1.5 relative group overflow-hidden">
+                  <span className="text-black font-outfit -mt-0.5">Gönder</span>
+                </button>
               </form>
             </div>
             <div className="col-span-full xl:col-span-5">
