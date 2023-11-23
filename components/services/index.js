@@ -18,7 +18,7 @@ export default function Services({ data }) {
               {item.content}
             </p>
             <TextLink
-              href={item.url}
+              href={`services/${item.url}`}
               title="Daha fazla"
             />
           </div>

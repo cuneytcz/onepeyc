@@ -12,19 +12,19 @@ const NavData = [
     label: "Anasayfa",
   },
   {
-    url: "about",
+    url: "/about",
     label: "Hakkımızda",
   },
   {
-    url: "portfolio",
+    url: "/portfolio",
     label: "Portfolyo",
   },
   {
-    url: "services",
+    url: "/services",
     label: "Hizmetlerimiz",
   },
   {
-    url: "contact",
+    url: "/contact",
     label: "İletişim",
   },
 ];

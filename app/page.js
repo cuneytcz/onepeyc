@@ -35,7 +35,7 @@ export default function Page() {
             title="İşletmeleri Strateji, Tasarım ve Geliştirme ile İnşa Ediyor ve Dönüştürüyoruz"
             description="Biz, işletmelerinizi strateji, tasarım ve geliştirme ile güçlendirerek dönüştüren bir ekibiz. Her adımımızda, özgün bir vizyonu hayata geçirmek ve işletmenizi çığır açan bir başarıya taşımak için çabalıyoruz. Stratejik yaklaşımlarımız, etkileyici tasarımlarımız ve güçlü geliştirme süreçlerimizle, işletmenizi modern iş dünyasında öne çıkaracak çözümler sunuyoruz. Müşteri odaklı yaklaşımımız ve sektöre özgü çözümlerimizle, işletmenizin potansiyelini maksimuma çıkarıyor ve sürdürülebilir bir başarıya yönlendiriyoruz."
             src="/h-img-3.jpg"
-            href=""
+            href="about/page"
           />
         </Container>
       </Section>

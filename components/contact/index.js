@@ -17,7 +17,7 @@ export default function Contact() {
             </span>
             <h3 className="text-xl xl:text-2xl mb-24">Bir projeye başlayın</h3>
             <TextLink
-              href=""
+              href="contact"
               title="Hemen Teklif Al"
             />
           </div>
@@ -36,7 +36,7 @@ export default function Contact() {
               Bizimle iletişime geçin
             </h3>
             <TextLink
-              href=""
+              href="mailto:info@onpeyc.com"
               title="Bize E-posta Gönder"
             />
           </div>

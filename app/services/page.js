@@ -20,7 +20,7 @@ export default function Page() {
           <Banner
             title="Marketi Daha İyiye Taşıyacak Projeler İnşa Ediyoruz"
             description="Vizyonumuz, piyasanın dinamiklerini olumlu yönde değiştirmek üzere tasarlanmış projeleri hayata geçirmek. Yaratıcı çözümlerimiz ve sıradışı yaklaşımımızla, müşterilerimize değer katmayı hedefliyor ve sektörü daha ileriye taşımak için el birliğiyle çalışıyoruz."
-            href=""
+            href="about/page"
             src="h-img-3.jpg"
             reverse={true}
           />

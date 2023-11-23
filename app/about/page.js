@@ -25,7 +25,7 @@ export default function Page() {
           <Banner
             title="Inovasyon ve Teknoloji Harmanında OnePeyc: Geleceği Şekillendiren Yazılım Çözümleri"
             description="OnePeyc olarak, yazılım dünyasında bir adım öne çıkmak, sıra dışı çözümler sunmak ve müşterilerimizin dijital dönüşüm yolculuklarını daha etkileyici ve verimli hale getirmek için buradayız. Teknolojiyi anlamak, onunla dans etmek ve her projemizde inovasyona liderlik etmek, varoluş nedenimizi oluşturuyor."
-            href=""
+            href="about/page"
             src="/h-img-3.jpg"
             reverse={true}
           />

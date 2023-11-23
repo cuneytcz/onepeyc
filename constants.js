@@ -23,7 +23,7 @@ export const ServicesData = [
     title: "Büyüme Odaklı Pazarlama",
     content:
       'Günümüz rekabetçi iş dünyasında, sadece var olmak değil, sürekli büyümek de önemli bir hedef haline gelmiştir. İşte bu noktada "Büyüme Odaklı Pazarlama" stratejileri, şirketlerin pazar payını genişletmek, müşteri tabanını artırmak ve rekabet avantajı elde etmek için kullanılan etkili bir yaklaşımdır.',
-    url: "butume-odakli-pazarlama",
+    url: "buyume-odakli-pazarlama",
   },
 ];
 export const PortfolioData = [
