@@ -5,8 +5,35 @@ import Heading from "@/components/heading";
 import Input from "@/components/input";
 import Section from "@/components/section";
 import React from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 export default function Page() {
+  const initialValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  const [formData, setFormData] = React.useState({});
+
+  const formik = useFormik({
+    initialValues,
+    validationSchema: Yup.object({
+      name: Yup.string().required("Adınızı giriniz"),
+      email: Yup.string()
+        .email("Geçerli bir e-posta adresi giriniz")
+        .required("E-posta adresinizi giriniz"),
+      message: Yup.string().required("Mesajınızı giriniz"),
+    }),
+    onSubmit: (values, { resetForm }) => {
+      resetForm();
+
+      setFormData((prev) => ({ ...prev, ...values }));
+      return values;
+    },
+  });
+
   return (
     <>
       <Heading
@@ -17,21 +44,41 @@ export default function Page() {
         <Container>
           <div className="grid xl:grid-cols-12 gap-12">
             <div className="col-span-full xl:col-span-7">
-              <form className="flex flex-col gap-12">
+              <form
+                onSubmit={formik.handleSubmit}
+                className="flex flex-col gap-12">
                 <Input
                   label="Ad Soyad *"
-                  id="name"
                   type="text"
+                  id="name"
+                  name="name"
+                  value={formik.values.name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  invalid={formik.touched.name && formik.errors.name}
+                  feedback={formik.errors.name}
                 />
                 <Input
                   label="E-posta *"
-                  id="email"
                   type="text"
+                  id="email"
+                  name="email"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  invalid={formik.touched.email && formik.errors.email}
+                  feedback={formik.errors.email}
                 />
                 <Input
                   label="Bize bir şeyler yazın *"
-                  id="message"
                   type="text"
+                  id="message"
+                  name="message"
+                  value={formik.values.message}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  invalid={formik.touched.message && formik.errors.message}
+                  feedback={formik.errors.message}
                 />
                 <button
                   type="submit"
