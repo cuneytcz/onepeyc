@@ -60,9 +60,6 @@ export default function Footer() {
                 </li>
                 <li className="text-white/60 font-outfit">09:00 - 16:00</li>
                 <li className="text-white/60 font-outfit">info@onepeyc.com</li>
-                <li className="text-white/60 font-outfit">
-                  +90 0 ( 531 ) 747 65 04
-                </li>
               </ul>
             </div>
             <div className="flex flex-col">

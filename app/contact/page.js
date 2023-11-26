@@ -110,11 +110,6 @@ export default function Page() {
                     className="text-black/60 hover:text-black font-outfit transition-colors">
                     info@onepeyc.com
                   </a>
-                  <a
-                    href="tel:+90 0 ( 531 ) 747 65 04"
-                    className="text-black/60 hover:text-black font-outfit transition-colors">
-                    +90 0 ( 531 ) 747 65 04
-                  </a>
                 </div>
               </div>
             </div>
